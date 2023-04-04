@@ -1,0 +1,31 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+
+# Builds
+[Bb]uilds/
+Assets/AssetStoreTools*
+
+# Player logs
+Player.log
+*.log
+
+# iOS Xcode
+*.xcodeproj/
+*.xcworkspace/
+
+# Android Ant / Eclipse
+bin/
+gen/
+local.properties
+project.properties
+
+# Miscellaneous
+*.sln
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln.ide
+*.orig
