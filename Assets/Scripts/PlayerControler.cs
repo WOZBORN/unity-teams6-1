@@ -6,7 +6,7 @@ public class PlayerControler : MonoBehaviour
     public Rigidbody2D rb;
     public float jumpforce;
     public float speed = 5;
-    public Animator animator;
+    //public Animator animator;
     private SpriteRenderer sprite;
 
     public float score = 0;
@@ -21,7 +21,7 @@ public class PlayerControler : MonoBehaviour
             scoreText.text = score.ToString();
         }
 
-        if (collision.CompareTag("Finish")&&score >= 2)
+        if (collision.CompareTag("Finish"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
@@ -40,18 +40,18 @@ public class PlayerControler : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
-            animator.SetBool("isgoing", true);
+            //animator.SetBool("isgoing", true);
             sprite.flipX = true;
         }
         else if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
-            animator.SetBool("isgoing", true);
+            //animator.SetBool("isgoing", true);
             sprite.flipX = false;
         }
         else
         {
-            animator.SetBool("isgoing", false);
+            //animator.SetBool("isgoing", false);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
